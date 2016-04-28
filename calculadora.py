@@ -7,7 +7,6 @@ def subtracao(x, y):
 	impressao(total)
 
 def divisao(x, y):
-	# // significa divisão por inteiros
 	total =  x / y
 	impressao(total)
 
