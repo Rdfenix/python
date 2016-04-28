@@ -9,7 +9,7 @@ while (order.upper() != 'Q'):
 		orders.append(order)
 	else:
 		print("Menu item doesn't exist")
-	
+
 
 	order = input("Anything else? (Q to quit)")
 
