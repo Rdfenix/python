@@ -8,15 +8,15 @@ def subtracao(x, y):
 
 def divisao(x, y):
 	# // significa divisão por inteiros
-	total =  x // y
+	total =  x / y
 	impressao(total)
 
 def multiplicacao(x, y):
 	total = x * y
 	impressao(total)
 
-def transformInt(x):
-	y = int(x)
+def transformFloat(x):
+	y = float(x)
 	return y
 
 def impressao(f):
@@ -40,9 +40,9 @@ def main():
 	number2 = input('Informe o segundo numero a ser calculado: ')
 	opt = input('Informe a operação desejada: ')
 
-	a = transformInt(number1)
-	b = transformInt(number2)
-	option = transformInt(opt)
+	a = transformFloat(number1)
+	b = transformFloat(number2)
+	option = transformFloat(opt)
 
 	operacao(option, a, b)
 
