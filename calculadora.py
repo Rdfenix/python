@@ -34,10 +34,14 @@ def operacao(x, a, b):
 def main():
 
 	option = {1:adicao, 2: subtracao, 3:divisao, 4:multiplicacao }
+	opt_choice = {1:'Adição', 2:'Subtração', 3:'Divisão', 4:'Multiplicação'}
 
-	number1 = input('Informe o primeiro numero a ser calculado: ')
-	number2 = input('Informe o segundo numero a ser calculado: ')
-	opt = input('Informe a operação desejada: ')
+	for number, name in opt_choice.items():
+		print(number, ": ", name, sep="")
+
+	number1 = input('Informe o primeiro numero a ser calculado: \n')
+	number2 = input('Informe o segundo numero a ser calculado: \n')
+	opt = input('Informe a operação desejada: \n')
 
 	a = transformFloat(number1)
 	b = transformFloat(number2)
